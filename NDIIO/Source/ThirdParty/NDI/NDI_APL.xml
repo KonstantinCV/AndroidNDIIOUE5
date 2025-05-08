@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root xmlns:android="http://schemas.android.com/apk/res/android">
   <init>
-    <log text="NDIIO Plugin APL: Initialization started." />
+    <log text="NDIIO Plugin on Android APL: Initialization started." />
   </init>
   <libraries>
     <!-- Architecture-specific library inclusion -->
@@ -10,10 +10,10 @@
   </libraries>
 
   <resourceCopies>
-    <copyFile src="D:/UE/WOP_Controls/Plugins/NDIIO/Source/ThirdParty/NDI/Libraries/Android/arm64-v8a/libndi.so" dst="libs/arm64-v8a/libndi.so" />
-    <copyFile src="D:/UE/WOP_Controls/Plugins/NDIIO/Source/ThirdParty/NDI/Libraries/Android/armeabi-v7a/libndi.so" dst="libs/armeabi-v7a/libndi.so" />
-    <copyFile src="D:/UE/WOP_Controls/Plugins/NDIIO/Source/ThirdParty/NDI/Libraries/Android/arm64-v8a/libndi.so" dst="D:/UE/WOP_Controls/Intermediate/Android/arm64/libs/arm64-v8a/libndi.so" />
-    <copyFile src="D:/UE/WOP_Controls/Plugins/NDIIO/Source/ThirdParty/NDI/Libraries/Android/armeabi-v7a/libndi.so" dst="D:/UE/WOP_Controls/Intermediate/Android/arm64/libs/armeabi-v7a/libndi.so" />
+    <copyFile src="<Absolute libnid.so PATH>" dst="libs/arm64-v8a/libndi.so" />
+    <copyFile src="<Absolute libndi.so PATH>" dst="libs/armeabi-v7a/libndi.so" />
+    <copyFile src="<Absolute libndi.so PATH>" dst="<Your Project Absolute Path>/Intermediate/Android/arm64/libs/arm64-v8a/libndi.so" />
+    <copyFile src="<Absolute libndi.so PATH>" dst="<Your Project Absolute Path>/Intermediate/Android/arm64/libs/armeabi-v7a/libndi.so" />
   </resourceCopies>
   <runtimeDependencies>
     <dependency architecture="arm64-v8a" path="libs/arm64-v8a/libndi.so" />
