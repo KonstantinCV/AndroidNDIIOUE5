@@ -9,3 +9,5 @@ Tested only the Broadcast component for now, working well on Samsung S10 and Xia
 For building for your engine version from source, check the NDI_APL.xml and replace all needed pathes for the libndi.so.
 
 Tested on UE 5.3.2
+
+All plugin functionality is same as original on NDI.tv
