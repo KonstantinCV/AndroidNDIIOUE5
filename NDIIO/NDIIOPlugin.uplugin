@@ -5,7 +5,7 @@
 	"FriendlyName": "NDI IO Plugin Android",
 	"Description": "Exposes Core NDI Support for integration into Unreal Engine Applications",
 	"Category": "Virtual Production",
-	"CreatedBy": "Vizrt NDI AB",
+	"CreatedBy": "Vizrt NDI AB, ported to android by Konstantin Dektyarev",
 	"CreatedByURL": "https://www.ndi.video",
 	"DocsURL": "",
 	"MarketplaceURL": "",
