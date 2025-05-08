@@ -1,0 +1,63 @@
+{
+	"FileVersion": 3,
+	"Version": 10,
+	"VersionName": "3.7",
+	"FriendlyName": "NDI IO Plugin Android",
+	"Description": "Exposes Core NDI Support for integration into Unreal Engine Applications",
+	"Category": "Virtual Production",
+	"CreatedBy": "Vizrt NDI AB",
+	"CreatedByURL": "https://www.ndi.video",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"Installed": true,
+	"bCanBeUsedWithShipping": true,
+	"CanBeUsedWithUnrealHeaderTool": true,
+	"Modules": [
+		{
+			"Name": "NDIIO",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"LinuxArm64",
+				"Android"
+			]
+		},
+		{
+			"Name": "NDIIOEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"WhitelistTargets": [ "Editor" ],
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"LinuxArm64"
+			]
+		},
+		{
+			"Name": "NDIIOShaders",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"WhitelistTargets": [ "Editor" ],
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"LinuxArm64",
+				"Android"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "MediaIOFramework",
+			"Enabled": true
+		},
+		{
+			"Name": "MediaFrameworkUtilities",
+			"Enabled": true
+		}
+	]
+}

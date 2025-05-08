@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+  <init>
+    <log text="NDIIO Plugin APL: Initialization started." />
+  </init>
+  <libraries>
+    <!-- Architecture-specific library inclusion -->
+    <library architectures="armeabi-v7a" src="libs/armeabi-v7a/libndi.so" />
+    <library architectures="arm64-v8a" src="libs/arm64-v8a/libndi.so" />
+  </libraries>
+
+  <resourceCopies>
+    <copyFile src="D:/UE/WOP_Controls/Plugins/NDIIO/Source/ThirdParty/NDI/Libraries/Android/arm64-v8a/libndi.so" dst="libs/arm64-v8a/libndi.so" />
+    <copyFile src="D:/UE/WOP_Controls/Plugins/NDIIO/Source/ThirdParty/NDI/Libraries/Android/armeabi-v7a/libndi.so" dst="libs/armeabi-v7a/libndi.so" />
+    <copyFile src="D:/UE/WOP_Controls/Plugins/NDIIO/Source/ThirdParty/NDI/Libraries/Android/arm64-v8a/libndi.so" dst="D:/UE/WOP_Controls/Intermediate/Android/arm64/libs/arm64-v8a/libndi.so" />
+    <copyFile src="D:/UE/WOP_Controls/Plugins/NDIIO/Source/ThirdParty/NDI/Libraries/Android/armeabi-v7a/libndi.so" dst="D:/UE/WOP_Controls/Intermediate/Android/arm64/libs/armeabi-v7a/libndi.so" />
+  </resourceCopies>
+  <runtimeDependencies>
+    <dependency architecture="arm64-v8a" path="libs/arm64-v8a/libndi.so" />
+    <dependency architecture="armeabi-v7a" path="libs/armeabi-v7a/libndi.so" />
+  </runtimeDependencies>
+
+</root>
