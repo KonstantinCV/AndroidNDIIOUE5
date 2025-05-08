@@ -58,20 +58,9 @@ public class NDIIO : ModuleRules
             PrivateDependencyModuleNames.Add("Launch");
             PublicIncludePaths.Add(Path.Combine(PluginDirectory, "Source/ThirdParty/NDI/includes"));
 
-            //   string PluginPath = Path.GetFullPath(PluginDirectory);
-            //  //  Logger.LogInformation(Path.Combine(PluginPath));
-            //   string LibPath = Path.Combine(PluginPath, "Source/ThirdParty/NDI/Libraries/Android/arm64-v8a");
-            //  RuntimeDependencies.Add(Path.Combine(PluginPath, "Source/ThirdParty/NDI/Libraries/Android/armeabi-v7a/libndi.so"));
-            //    RuntimeDependencies.Add(Path.Combine(PluginPath, "Source/ThirdParty/NDI/Libraries/Android/arm64-v8a/libndi.so"));
-            // Delay-load the library
-            //  PublicDelayLoadDLLs.Add("libndi.so");
-
 
             PublicDefinitions.Add("NDI_SDK_ENABLED");
-
-            //    AdditionalPropertiesForReceipt.Add("AndroidPlugin", Path.Combine(ModuleDirectory, "../../Source/ThirdParty/NDI/NDI_APL.xml"));
-
-            // Do NOT register .so or AndroidPlugin here — leave that to NDI.Build.cs
+            // Do NOT register .so or AndroidPlugin here â€” leave that to NDI.Build.cs
         }
         PrivateDependencyModuleNames.AddRange(new string[] {
 			"Renderer",
@@ -83,17 +72,13 @@ public class NDIIO : ModuleRules
 			"ImageWrapper",
 			"AudioMixer",
 			"AudioExtensions",
-
 			"InputCore",
-
 			"Media",
 			"MediaAssets",
 			"MediaIOCore",
 			"MediaUtils",
 			"TimeManagement",
-
 			"CinematicCamera",
-
 			"XmlParser"
 		});
 
